@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienestar Universitario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+        }
+
+        .info-container {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2c4577;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bienestar Universitario</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Requerimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-5">
+        <div class="row">
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="feature-icon fs-1">📋</div>
+                        <h5 class="card-title">Requerimientos</h5>
+                        <p class="card-text">Envía tus solicitudes, sugerencias o problemas directamente a nuestro
+                            equipo de Bienestar Universitario.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="feature-icon fs-1">💬</div>
+                        <h5 class="card-title">Soporte</h5>
+                        <p class="card-text">Recibe ayuda y soporte para cualquier problema relacionado con el bienestar
+                            universitario.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="feature-icon fs-1">💡</div>
+                        <h5 class="card-title">Información</h5>
+                        <p class="card-text">Accede a información útil sobre programas y actividades de bienestar para
+                            la comunidad estudiantil.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="my-5">
+            <h3 class="text-center mb-4">Formulario de Requerimiento</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="id" class="form-label">Número de Identificación</label>
+                    <input type="text" id="id" name="id" class="form-control" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="area" class="form-label">Área de Bienestar</label>
+                    <select id="area" name="area" class="form-select" required>
+                        <option value="salud">Salud</option>
+                        <option value="deportes">Deportes</option>
+                        <option value="cultura">Cultura</option>
+                        <option value="psicologia">Psicología</option>
+                        <option value="odontologia">Odontología</option>
+                        <option value="atencion_espiritual">Atención Espiritual</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="tipo_requerimiento" class="form-label">Tipo de Requerimiento</label>
+                    <select id="tipo_requerimiento" name="tipo_requerimiento" class="form-select" required>
+                        <option value="solicitud">Solicitud</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="queja_reclamo">Queja o Reclamo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="requerimiento" class="form-label">Descripción del Requerimiento</label>
+                    <textarea id="requerimiento" name="requerimiento" class="form-control" rows="3" required></textarea>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="archivo" class="form-label">Agregar archivo (opcional)</label>
+                    <input type="file" id="archivo" name="archivo" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar Requerimiento</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-6 mb-4">
+                <div class="info-container">
+                    <h3 class="text-center mb-4">Horarios de Atención</h3>
+                    <p><strong>Lunes a Viernes:</strong> desde las 8:00 AM - 12:00 PM a las 2:00 PM - 5:00 PM</p>
+                    <p><strong>Atención Psicológica:</strong> Lunes a Viernes 8:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mb-4">
+                <div class="info-container">
+                    <h4 class="mt-4">Tiempos de Respuesta</h4>
+                    <ul>
+                        <li><strong>Solicitudes generales:</strong> 2 días hábiles</li>
+                        <li><strong>Quejas y reclamos:</strong> 5 días hábiles</li>
+                        <li><strong>Casos urgentes:</strong> 24 horas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="info-container">
+                    <h4 class="mt-4">Contacto Directo</h4>
+                    <ul>
+                        <li><strong>Teléfono:</strong> (123) 456-7890</li>
+                        <li><strong>WhatsApp:</strong> +57 300 123 4567</li>
+                        <li><strong>Correo:</strong> bienestar@universidad.edu.co</li>
+                        <li><strong>Ubicación:</strong> Edificio Central, Piso 2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2">Acerca de Nosotros</a>
+                <a href="#" class="text-white mx-2">Política de Privacidad</a>
+                <a href="#" class="text-white mx-2">Términos de Uso</a>
+                <a href="#" class="text-white mx-2">Preguntas Frecuentes</a>
+            </div>
+            <p>&copy; 2025 Bienestar Universitario, Universidad de Pamplona. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
