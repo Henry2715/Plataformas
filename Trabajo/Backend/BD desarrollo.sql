@@ -1,18 +1,6 @@
 <!-- INTEGRANTES: FABIAN ANDRES ARIAS SANTIAGO, STEFANNY XIOMARA FAJARDO, HENRY DAVID SUAREZ SERRANO, Solanggie Moreno Santos-->
 
-CREATE TABLE Usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre_completo VARCHAR(255) NOT NULL,
-    correo_electronico VARCHAR(255) NOT NULL UNIQUE,
-    numero_telefono VARCHAR(15),
-    fecha_nacimiento DATE,
-    genero VARCHAR(10),
-    id_estudiantil VARCHAR(50) UNIQUE,
-    direccion_residencial VARCHAR(255)
-    programa_academico VARCHAR(255),
-    año_estudio INT,
-    estatus_academico ENUM('activo', 'licenciatura', 'posgrado', 'otro') DEFAULT 'activo'
-);
+
 
 CREATE TABLE Requerimientos (
     id_requerimiento INT PRIMARY KEY AUTO_INCREMENT,
