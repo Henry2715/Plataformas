@@ -19,3 +19,11 @@ Use this section to tell people how to report a vulnerability.
 Tell them where to go, how often they can expect to get an update on a
 reported vulnerability, what to expect if the vulnerability is accepted or
 declined, etc.
+
+# Política de Seguridad
+
+## Reporte de Vulnerabilidades
+Por favor reporte vulnerabilidades a: 
+- Email: seguridad@tuuniversidad.edu.co
+- Plazo de respuesta: 72 horas hábiles
+- No divulgue públicamente hasta que se resuelva
