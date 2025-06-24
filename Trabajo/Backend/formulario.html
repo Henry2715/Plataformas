@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Bienestar Universitario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="FormularioEstilo.css">
+</head>
+<body>
+    <div id="formulario" class="container my-5 px-4 px-md-5">
+        <div class="p-4 rounded shadow form-container">
+            <h2 class="titulo-formulario mb-4 text-center"><i>Formulario de Requerimientos</i></h2>
+            <form action="guardar_requerimientos.php" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="nombre_completo" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" name="nombre_completo" id="nombre_completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="numero_identificacion" class="form-label">Número de Identificación</label>
+                    <input type="text" class="form-control" name="numero_identificacion" id="numero_identificacion" required>
+                </div>
+                <div class="mb-3">
+                    <label for="area_bienestar" class="form-label">Área de Bienestar</label>
+                    <select class="form-select" name="area_bienestar" id="area_bienestar">
+                        <option value="Medica">Médica</option>
+                        <option value="Odontología">Odontología</option>
+                        <option value="Psicologia">Psicología</option>
+                        <option value="Cultura">Cultura</option>
+                        <option value="Actividades recreativas">Deporte</option>
+                        <option value="Cita espiritual">Espiritualidad</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción del requerimiento</label>
+                    <textarea class="form-control" name="descripcion" id="descripcion" rows="4"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="tipo_requerimiento" class="form-label">Tipo de Requerimiento</label>
+                    <select class="form-select" name="tipo_requerimiento" id="tipo_requerimiento">
+                        <option value="Solicitud">Solicitud</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                        <option value="Queja">Queja</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="archivo" class="form-label">Agregar archivo (opcional)</label>
+                    <input type="file" class="form-control" name="archivo" id="archivo">
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-enviar zoom-button">Enviar</button>
+                </div>
+                <a href="./index.html" class="btn-conocer">Volver al inicio</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
