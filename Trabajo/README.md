@@ -5,7 +5,7 @@ El presente proyecto tiene como objetivo el desarrollo de una plataforma web des
 - Bootstrap
 ## Como ejecutar
 1. clona el repositorio
-   git clone https://github.com/daninyup/Plataformas.git
+   git clone https://github.com/Henry2715/Plataformas/tree/main/Trabajo
 3. ejecuta ´nmp install´
 4. corre el servidor con ´npm start´
 ## Autores
