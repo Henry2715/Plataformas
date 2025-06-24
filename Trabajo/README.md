@@ -4,10 +4,16 @@ El presente proyecto tiene como objetivo el desarrollo de una plataforma web des
 - HTML, CSS, Javascript
 - Bootstrap
 ## Como ejecutar
-1. clona el repositorio
-   git clone https://github.com/Henry2715/Plataformas/tree/main/Trabajo
-3. ejecuta ´nmp install´
-4. corre el servidor con ´npm start´
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Henry2715/Plataformas.git
+2. Entra a la carpeta Trabajo:
+   cd Plataformas/Trabajo
+3. Instala las dependencias:
+   npm install
+4. Inicia el servidor:
+   npm start
+Asegúrate de tener Node.js y npm instalados en tu máquina.
 ## Autores
 - Stefanny Fajardo
 -  Henry David Suarez
