@@ -1,0 +1,214 @@
+:root {
+    --rojo: #ad3333;
+    --azul: #003366;
+    --gris: #f4f6f9;
+}
+/*Estilo del fondo y del texto global del apartado de inicio*/
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #ffe0b2, #fbe9e7, #e3f2fd);
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+/*color del texto del navbar*/
+.navbar-custom {
+    width: 100%;
+    background-color: #ffe0b2;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    color: rgb(160, 63, 63);
+    font-size: 1.5rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    color: var(--rojo);
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--azul);
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--rojo);
+}
+
+.escudo-img {
+    height: 40px;
+    width: auto;
+}
+
+/* Título de la sección */
+.titulo-beneficios {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #b71c1c;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card .card-body {
+    padding: 25px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.extra-info {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.extra-info img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.card-pequena {
+    height: 250px;  
+    overflow: auto; 
+}
+
+/* Footer */
+.footer-redes {
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    color: #333;
+}
+
+.footer-redes h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-redes a {
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-redes a:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+
+/* Formulario */
+.custom-card {
+    background-color: #fff8b3;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    min-height: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Botón enviar del formulario*/
+.btn-enviar {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(255, 193, 7, 0.4);
+}
+/*esto hace que al escoger el boton enviar del formulario este expanda su tamaño un poco y cambie de color para darle dinamismo*/
+.btn-enviar:hover {
+    background-color: #ffb300;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 193, 7, 0.6);
+}
+
+/* Frases motivacionales */
+.frase-card {
+    background-color: #ffe6e6;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.frase-texto {
+    color: #d32f2f;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* Noticias */
+.titulo-noticias {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #b71c1c;
+}
+
+.sombra-noticias {
+    border-radius: 15px;
+}
+
+#rss-feed {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.noticia-item {
+    padding: 15px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 700px;
+    text-align: center;
+    border: none;
+}
+
+.noticia-link {
+    text-decoration: none;
+    color: #1a237e;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    display: inline-block;
+    word-break: break-word;
+}
+
+.noticia-link:hover {
+    color: #f44336;
+}
