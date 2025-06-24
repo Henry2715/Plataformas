@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienestar Universitario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar donde sale el apartado del texto unipamplona y del escudo -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="https://www.unipamplona.edu.co" target="_blank">
+            <img src="imagenes/escudounipamplona.png" alt="Escudo Unipamplona" class="escudo-img me-2">
+            <span class="fw-bold">Unipamplona</span>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Banner con León salud y león deportes -->
+    <section class="hero position-relative d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-4 fw-bold">Sumergete en el mundo de Bienestar</h1>
+        <p class="lead">Tu Bienestar a tan solo un click!</p>
+        <img src="imagenes/leon salud.png" alt="León Bienestar" class="leon-banner-img">
+        <img src="imagenes/leon_deportes.png" alt="León bienestar" class="leon-banner2-img">
+    </section>
+    <!-- Carrusel de fotos de bienestar y secciones de izquierda a derecha-->
+    <div class="container my-5">
+        <div class="row align-items-start">
+            <!-- Columna izquierda: Carrusel de fotos de bienestar e información de los Trabajadores -->
+            <div class="col-md-6 mb-4">
+                <!-- Carrusel de fotos de Bienestar -->
+                <div id="carouselBienestar" class="carousel slide shadow rounded mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.unipamplona.edu.co/unipamplona/portalIG/home_214/recursos/2024_1/15072024/galeria11.png"
+                                class="fixed-size" alt="Bienestar 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.unipamplona.edu.co/unipamplona/portalIG/home_1/recursos/noticias_2015/noviembre/27112015/cucuta3.jpg"
+                                class="fixed-size" alt="Bienestar 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://pbs.twimg.com/media/GrZveT-W4AAt9zW.jpg" class="fixed-size"
+                                alt="Bienestar 3">
+                        </div>
+                    </div>
+                    <!--Botones para controlar la navegación del carrusel de fotos-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBienestar"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBienestar"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <!-- Información del Equipo de Trabajadores -->
+                <section class="staff-section">
+                    <h2 class="titulo-equipo text-center">Nuestro equipo</h2>
+                    <div class="staff-container">
+                        <div class="staff-card">
+                            <h3>Doctor Forero</h3>
+                            <p>Medicina General</p>
+                            <p>Disponibilidad de 2:00 pm a 6:00 pm</p>
+                            <a href="DoctorForero.html" class="btn btn-warning">Conóceme</a>
+                        </div>
+                        <div class="staff-card">
+                            <h3>Psicologa Diana</h3>
+                            <p>Psicologia</p>
+                            <p> Disponibilidad de horario laboral</p>
+                            <a href="PsicologaDiana.html" class="btn btn-warning">Conóceme</a>
+                        </div>
+                        <div class="staff-card">
+                            <h3>Enfermera Luisa</h3>
+                            <p>Enfermeria y Medicina general</p>
+                            <p>Disponibilidad de horario laboral</p>
+                            <a href="EnfermeraLuisa.html" class="btn btn-warning">Conóceme</a>
+                        </div>
+                        <div class="staff-card">
+                            <h3>Licenciado Maza</h3>
+                            <p>Licenciado en Eduación y Deportes</p>
+                            <p>Disponibilidad de horario laboral</p>
+                            <a href="LicenciadoMaza.html" class="btn btn-warning">Conóceme</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Columna derecha: Formulario, Noticias y Frases -->
+            <div class="col-md-6 d-flex flex-column justify-content-start">
+                <!-- Formulario -->
+                <div class="card custom-card mb-4">
+                    <div class="card-body">
+                        <h5><strong>Llena el siguiente formulario para acceder a nuestros servicios</strong></h5>
+                        <p class="card-text">
+                            Puedes realizar solicitudes, quejas o sugerencias asi como generar citas con cualquiera de nuestros especialistas.
+                        </p>
+                        <a href="formulario.html#formulario" class="btn btn-enviar">Ir al formulario</a>
+                        <!--Botón del formulario que lleva a la página para llenarlo-->
+                    </div>
+                </div>
+                <!-- Sección de Noticias que le pueden interesar al usuario -->
+                <section class="noticias-salud mb-4">
+                    <h2 class="text-center titulo-noticias mb-3">🧠 Noticias que te pueden interesar sobre salud y
+                        deportes 🧠
+                    </h2>
+                    <ul id="rss-feed" class="list-group list-group-flush sombra-noticias"></ul>
+                </section>
+                <!-- Frases motivacionales -->
+                <div class="card frase-card text-center">
+                    <div id="fraseCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="frase-texto m-0">"El bienestar es el primer paso hacia el éxito académico."
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="frase-texto m-0">"Tu bienestar emocional también importa."</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="frase-texto m-0">"Estamos aquí para apoyarte."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Libreria de Bootstrap JS para hacer el tema del carrusel de fotos y demás -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Redes Sociales de Bienestar Universitario -->
+    <footer class="footer-redes py-4 mt-5">
+        <div class="container text-center">
+            <h5>Síguenos en redes sociales</h5>
+            <ul class="list-inline mt-3">
+                <li class="list-inline-item">
+                    <a class="text-dark" href="https://www.instagram.com/bienestaruniversitarioup/" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-dark"
+                        href="https://web.facebook.com/people/Bienestar-Universitario-Unipamplona/100083112258365/?_rdc=1&_rdr"
+                        target="_blank">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-dark" href="https://www.youtube.com/channel/UCsRXh2HIJYeh28EBs_KJT6A"
+                        target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- JS con uso de una Api para las Noticias dinámicas sobre la salud -->
+    <script>
+        fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Ffeeds.bbci.co.uk%2Fmundo%2Frss.xml&api_key=xzt080yje1hbdwh7atkhtwivukyolc85poridxbh')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById("rss-feed");
+                container.innerHTML = '';
+                if (!data.items) {
+                    container.innerHTML = "<li class='list-group-item text-danger'>No se pudieron cargar noticias.</li>";
+                    return;
+                }
+                /*Palabras claves para filtrar las noticias y que la api no me muestre todas las noticias que se van subiendo constantemente*/
+                const keywords = [
+                    "salud mental", "mental", "universidad", "universitarios", "bienestar",
+                    "deporte", "ejercicio", "actividad física", "salud física", "física",
+                    "dientes", "higiene bucal", "boca", "dental"
+                ];
+
+                function matchesKeywords(text) {
+                    return keywords.some(keyword => text.toLowerCase().includes(keyword));
+                }
+
+                const filteredItems = data.items.filter(item =>
+                    matchesKeywords(item.title) || matchesKeywords(item.description)
+                );
+
+                if (filteredItems.length > 0) {
+                    filteredItems.slice(0, 5).forEach(item => {
+                        const li = document.createElement("li");
+                        li.className = "list-group-item noticia-item";
+                        li.innerHTML = `
+                            <a href="${item.link}" target="_blank" class="noticia-link">
+                                <i class="fas fa-heartbeat me-2"></i> ${item.title}
+                            </a>`;
+                        container.appendChild(li);
+                    });
+                }
+            })
+            .catch(error => {
+                document.getElementById("rss-feed").innerHTML = "<li class='list-group-item text-danger'>Error al cargar noticias.</li>";
+                console.error("Error al cargar el feed:", error);
+            });
+    </script>
+</body>
+</html>
