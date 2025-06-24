@@ -1,0 +1,260 @@
+:root {
+    --rojo: #ad3333;
+    --azul: #003366;
+    --gris: #f4f6f9;
+}
+/*Estilo del fondo y del texto global del apartado de inicio*/
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #ffe0b2, #fbe9e7, #e3f2fd);
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/*color del texto del navbar*/
+.navbar-custom {
+    width: 100%;
+    background-color: #ffe0b2;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto de marca */
+.navbar-brand {
+    color: rgb(160, 63, 63);
+    font-size: 1.5rem;
+}
+
+/* Estilo de los links */
+.navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* Dorado al pasar el cursor */
+}
+
+/* Imagen del escudo */
+.escudo-img {
+    height: 40px;
+    width: auto;
+}
+
+/* Banner con degradado siguiendo los estándares de colores de la unipamplona */
+.hero {
+    background: linear-gradient(to right, #fdd835, #e53935, #1e3a8a); /* degradado institucional */
+    color: white;
+    padding: 80px 20px;
+    border-radius: 0; 
+    margin: 0; 
+    width: 100%;
+}
+
+
+/* Formulario */
+.custom-card {
+    background-color: #fff8b3;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    min-height: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Botón enviar del formulario*/
+.btn-enviar {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(255, 193, 7, 0.4);
+}
+/*esto hace que al escoger el boton enviar del formulario este expanda su tamaño un poco y cambie de color para darle dinamismo*/
+.btn-enviar:hover {
+    background-color: #ffb300;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 193, 7, 0.6);
+}
+
+/* Frases motivacionales */
+.frase-card {
+    background-color: #ffe6e6;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.frase-texto {
+    color: #d32f2f;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*Animación de las Imágenes del banner */
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+/*detalles de ambos leones para que se ajusten al tamaño del banner y para que sigan la animacion en un loop*/
+.leon-banner-img,
+.leon-banner2-img {
+    position: absolute;
+    bottom: 0;
+    height: 160px;
+    z-index: 1;
+    animation: flotar 3s ease-in-out infinite;
+}
+/*ajuste de las posiciones de ambos leones para que esten a los costados de la pagina*/
+.leon-banner-img { left: 20px; }
+.leon-banner2-img { right: 20px; }
+
+/* Carrusel / imágenes */
+.fixed-size {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Footer */
+.footer-redes {
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    color: #333;
+}
+
+.footer-redes h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-redes a {
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-redes a:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+/* Noticias */
+.titulo-noticias {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #b71c1c;
+}
+
+.sombra-noticias {
+    border-radius: 15px;
+}
+
+#rss-feed {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.noticia-item {
+    padding: 15px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 700px;
+    text-align: center;
+    border: none;
+}
+
+.noticia-link {
+    text-decoration: none;
+    color: #1a237e;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    display: inline-block;
+    word-break: break-word;
+}
+
+.noticia-link:hover {
+    color: #f44336;
+}
+
+/* trabajadores */
+.staff-section {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.staff-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.staff-card:hover {
+    transform: scale(1.05);
+}
+
+.staff-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.staff-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.staff-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.staff-card button {
+    background-color: #ffb300;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.staff-card button:hover {
+    box-shadow: 0 8px 16px rgba(255, 193, 7, 0.6);
+}
+
+.titulo-equipo {
+    color: #b71c1c;
+}
