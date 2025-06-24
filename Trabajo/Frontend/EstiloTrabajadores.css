@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(to right, #8f98ff, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+} /*body global para el estilo de los trabajadores*/
+
+.perfil-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px;
+  flex-direction: row;
+}
+
+.texto-info,
+.imagen-trabajador {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.texto-info h1 {
+  font-size: 3rem;
+  color: #00796b;
+}
+
+.texto-info h2 {
+  font-size: 1.8rem;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.texto-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.btn-conocer {
+  background-color: #3aa397;
+  color: #000;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(35, 163, 110, 0.4);
+}
+
+.btn-conocer:hover {
+  background-color: #6fcfc4;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 193, 7, 0.6); /* corregido rgba */
+}
+
+.imagen-trabajador img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .perfil-container {
+    flex-direction: column;
+  }
+}
