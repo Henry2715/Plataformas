@@ -18,6 +18,7 @@ Asegúrate de tener Node.js y npm instalados en tu máquina.
 - Stefanny Fajardo FRONTEND Y DOCUMENTACIÓN
 -  Henry David Suarez BACKEND
 -  Fabian Andres Arias BACKEND
+- Solanggie Moreno Santos BACKEND 
 ## Estado
 🚧 En desarrollo
 
